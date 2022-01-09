@@ -64,7 +64,7 @@ const Toolbar = (anno, container) => {
       const inner = document.createElement('span');
       inner.className = 'a9s-toolbar-btn-inner';
 
-      inner.appendChild(icon);
+      inner.appendChild(icon.cloneNode(true));
 
       button.addEventListener('click', () => {
         setActive(button);
